@@ -45,8 +45,8 @@ sudo apt update
 sudo apt install -y shadowsocks-libev
 
 # V2Ray-plugin
-wget https://github.com/teddysun/v2ray-plugin/releases/download/v1.3.2/v2ray-plugin-linux-amd64.tar.gz
-tar xzf v2ray-plugin-linux-amd64.tar.gz
+wget https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.2/v2ray-plugin-linux-amd64-v1.3.2.tar.gz
+tar xzf v2ray-plugin-linux-amd64-v1.3.2.tar.gz
 sudo mv v2ray-plugin /usr/local/bin/
 sudo chmod +x /usr/local/bin/v2ray-plugin
 ```
@@ -120,14 +120,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 cargo install shadowsocks-rust
 
-# v2ray-plugin
-wget https://github.com/teddysun/v2ray-plugin/releases/download/v1.3.2/v2ray-plugin-linux-amd64.tar.gz
-tar xzf v2ray-plugin-linux-amd64.tar.gz
-mv v2ray-plugin $HOME/.cargo/bin/
-chmod +x $HOME/.cargo/bin/v2ray-plugin
+# v2ray plugin
+wget https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.2/v2ray-plugin-linux-amd64-v1.3.2.tar.gz
+tar xzf v2ray-plugin-linux-amd64-v1.3.2.tar.gz
+sudo mv v2ray-plugin /usr/local/bin/
+sudo chmod +x /usr/local/bin/v2ray-plugin
 
 # redsocks + iptables
-sudo dnf install -y redsocks iptables-services
+sudo apt install -y redsocks iptables-services
 ```
 
 
